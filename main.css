@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reggae One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    background-color: black;
+}
+
+.header {
+    margin-left: 30%;
+}
+
+._body{
+    margin-left: 27%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Playfair Display';
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto';
+    color: white;
+}
+
