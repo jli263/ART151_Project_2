@@ -10,6 +10,23 @@ body{
     margin-left: 30%;
 }
 
+.border_left {
+    top:10px;
+    position: fixed;
+    float: left;
+    width: 25%;
+    height: 630px;
+}
+
+.border_right {
+    top:10px;
+    float: right;
+    position: fixed;
+    margin-left: 74%;
+    width: 25%;
+    height: 630px;
+}
+
 ._body{
     margin-left: 27%;
 }
