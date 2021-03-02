@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Reggae One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Londrina Sketch&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body{
@@ -15,7 +15,7 @@ body{
     position: fixed;
     float: left;
     width: 25%;
-    height: 630px;
+    height: 97%;
 }
 
 .border_right {
@@ -24,7 +24,7 @@ body{
     position: fixed;
     margin-left: 74%;
     width: 25%;
-    height: 630px;
+    height: 97%;
 }
 
 h1, h2, h3, h4, h5, h6 {
