@@ -10,21 +10,27 @@
     </head>
     <body>        
         
-        <img class="border_left" src="starbucks_left_border.jpg"> 
-        <img class="border_right" src="starbucks_right_border.jpg">        
+        <img id="b_left" class="border_left" src="starbucks_left_border.jpg"> 
+        <img id="b_right" class="border_right" src="starbucks_right_border.jpg">        
 
         <div style="margin-top: 15%; text-align: center;">
             <p>You walk into the store and order your favorite coffee.</p>
             <p>You hand the cashier your credit card and the cashier </p>
             <p>ask if you want the receipt. What is your response?</p>
             <a href="cityReceipt.html"> <button style="background-color: green; border: none; width: 100px; height: 30px; ">Yes</button> </a>
-            <a href="city.html" style="margin-left: 3%;"> <button style="background-color: red; border: none; width: 100px; height: 30px;">No</button> </a>
-            <a href="city.html" style="margin-left: 3%;"> <button style="background-color: darkblue; border: none; width: 100px; height: 30px;">Email</button> </a>
+            <a href="city2.html" style="margin-left: 3%;"> <button style="background-color: red; border: none; width: 100px; height: 30px;">No</button> </a>
+            <a href="city2.html" style="margin-left: 3%;"> <button style="background-color: darkblue; border: none; width: 100px; height: 30px;">Email</button> </a>
         </div>
     </body>
 
     <script>
         function load_borders() {
+            if (localStorage.getItem("coffeeChoice").localeCompare("dunkin") == 0) {
+                document.getElementById("b_left").src = "dunkin_left_border.jpg";
+                document.getElementById("b_right").src = "dunkin_right_border.jpg";
+            }
         }
+
+        load_borders();
     </script>
 </html>

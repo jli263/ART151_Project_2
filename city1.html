@@ -18,8 +18,15 @@
             <p>notice there is a Starbucks and Dunkin Donuts near by </p>
             <p>and you decide that you want to get some coffee</p>
             <p>to start off your day. Where do you go?</p>
-            <a href="cityCoffee.html"> <button style="background-color: #00704A; border: none; width: 100px; height: 30px; "> Starbucks </button> </a>
-            <a href="cityCoffee.html" style="margin-left: 5%;"> <button style="background-color: #FF671F; border: none; width: 120px; height: 30px;">Dunkin Donuts</button> </a>
+            <button value="starbucks" onclick="coffeeChoice()" style="background-color: #00704A; border: none; width: 100px; height: 30px; "> Starbucks </button> 
+            <button value="dunkin" onclick="coffeeChoice()" style=" margin-left: 5%; background-color: #FF671F; border: none; width: 120px; height: 30px;">Dunkin Donuts</button> 
         </div>
     </body>
+
+    <script>
+        function coffeeChoice() {
+            localStorage.setItem("coffeeChoice", event.srcElement.value);
+            window.location = "cityCoffee.html";
+        }
+    </script>
 </html>
