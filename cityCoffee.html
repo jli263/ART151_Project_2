@@ -10,8 +10,8 @@
     </head>
     <body>        
         
-        <img id="b_left" class="border_left" src="starbucks_left_border.jpg"> 
-        <img id="b_right" class="border_right" src="starbucks_right_border.jpg">        
+        <img id="b_left" class="border_left" src="images/starbucks_left_border.jpg"> 
+        <img id="b_right" class="border_right" src="images/starbucks_right_border.jpg">        
 
         <div style="margin-top: 15%; text-align: center;">
             <p>You walk into the store and order your favorite coffee.</p>
@@ -26,8 +26,8 @@
     <script>
         function load_borders() {
             if (localStorage.getItem("coffeeChoice").localeCompare("dunkin") == 0) {
-                document.getElementById("b_left").src = "dunkin_left_border.jpg";
-                document.getElementById("b_right").src = "dunkin_right_border.jpg";
+                document.getElementById("b_left").src = "images/dunkin_left_border.jpg";
+                document.getElementById("b_right").src = "images/dunkin_right_border.jpg";
             }
         }
 
