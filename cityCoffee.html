@@ -10,27 +10,22 @@
     </head>
     <body>        
         
-        <img id="b_left" class="border_left" src="images/starbucks_left_border.jpg"> 
-        <img id="b_right" class="border_right" src="images/starbucks_right_border.jpg">        
+        <img id="b_left" class="border_left"> 
+        <img id="b_right" class="border_right">        
 
         <div style="margin-top: 15%; text-align: center;">
             <p>You walk into the store and order your favorite coffee.</p>
             <p>You hand the cashier your credit card and the cashier </p>
             <p>ask if you want the receipt. What is your response?</p>
-            <a href="cityReceipt.html"> <button style="background-color: green; border: none; width: 100px; height: 30px; ">Yes</button> </a>
-            <a href="city2.html" style="margin-left: 3%;"> <button style="background-color: red; border: none; width: 100px; height: 30px;">No</button> </a>
-            <a href="city2.html" style="margin-left: 3%;"> <button style="background-color: darkblue; border: none; width: 100px; height: 30px;">Email</button> </a>
+            <button value="cityCoffeeFail.html" onclick="load_page(this)" style="background-color: green; border: none; width: 100px; height: 30px; ">Yes</button> </a>
+            <button value="city2.html" onclick="load_page(this)" style="background-color: red; border: none; width: 100px; height: 30px; margin-left: 2%;">No</button> </a>
+            <button value="city2.html" onclick="load_page(this)" style="background-color: darkblue; border: none; width: 100px; height: 30px; margin-left: 2%;">Email</button> </a>
         </div>
     </body>
 
-    <script>
-        function load_borders() {
-            if (localStorage.getItem("coffeeChoice").localeCompare("dunkin") == 0) {
-                document.getElementById("b_left").src = "images/dunkin_left_border.jpg";
-                document.getElementById("b_right").src = "images/dunkin_right_border.jpg";
-            }
-        }
+    <script src="script.js"></script>
 
+    <script>
         load_borders();
     </script>
 </html>

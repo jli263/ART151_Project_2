@@ -10,23 +10,18 @@
     </head>
     <body>        
         
-        <img class="border_left" src="images/city_left_border.jpeg"> 
-        <img class="border_right" src="images/city_right_border.jpeg">        
+        <img class="border_left" src="images/city_left_border.jpeg" alt="city_left_border"> 
+        <img class="border_right" src="images/city_right_border.jpeg" alt="city_right_border">        
 
         <div style="margin-top: 15%; text-align: center;">
             <p>You enter the bright lights of New York city. You</p>
             <p>notice there is a Starbucks and Dunkin Donuts near by </p>
             <p>and you decide that you want to get some coffee</p>
             <p>to start off your day. Where do you go?</p>
-            <button value="starbucks" onclick="coffeeChoice()" style="background-color: #00704A; border: none; width: 100px; height: 30px; "> Starbucks </button> 
-            <button value="dunkin" onclick="coffeeChoice()" style=" margin-left: 5%; background-color: #FF671F; border: none; width: 120px; height: 30px;">Dunkin Donuts</button> 
+            <button value="starbucks" onclick="coffeeChoice(this)" style="background-color: #00704A; border: none; width: 100px; height: 30px; "> Starbucks </button> 
+            <button value="dunkin" onclick="coffeeChoice(this)" style=" margin-left: 5%; background-color: #FF671F; border: none; width: 120px; height: 30px;">Dunkin Donuts</button> 
         </div>
     </body>
 
-    <script>
-        function coffeeChoice() {
-            localStorage.setItem("coffeeChoice", event.srcElement.value);
-            window.location = "cityCoffee.html";
-        }
-    </script>
+    <script src="script.js"></script>
 </html>
