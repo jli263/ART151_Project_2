@@ -6,10 +6,6 @@ body{
     background-color: black;
 }
 
-.header {
-    margin-left: 30%;
-}
-
 .border_left {
     top:10px;
     position: fixed;
